@@ -2,10 +2,10 @@ name: Github Actions Demo
 on:
     repository_dispatch:
         types: [dispatch-test]
-
 jobs:
-    runs-on: ubuntu-latest
-    steps:
-        - uses: actions/checkout@v3
-        - uses: actions/setup-go@v3
-        - run: go run actions/actions.go
+    actions-demo:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            - uses: actions/setup-go@v3
+            - run: go run actions/actions.go
