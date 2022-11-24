@@ -2,6 +2,7 @@ name: Github Actions Demo
 on:
     repository_dispatch:
         types: [dispatch-test]
+    workflow_dispatch:
 jobs:
     actions-demo:
         runs-on: ubuntu-latest
