@@ -6,5 +6,6 @@ import (
 )
 
 func main() {
-	fmt.Print(os.Getenv("github"))
+	fmt.Println("Running actions...")
+	fmt.Println(os.Getenv("github.repository"))
 }
