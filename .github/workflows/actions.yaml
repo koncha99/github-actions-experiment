@@ -6,6 +6,8 @@ on:
 jobs:
     actions-demo:
         runs-on: ubuntu-latest
+        env:
+            TEXT: ${{ inputs.text }}
         steps:
             - uses: actions/checkout@v3
             - uses: actions/setup-go@v3
